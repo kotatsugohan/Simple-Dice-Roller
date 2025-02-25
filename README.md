@@ -10,8 +10,8 @@ A simple dice rolling tool. You can roll dice with custom values or use standard
 
 ## How to Use
 
-[1. Visit this site](https://stunning-axolotl-ec43ae.netlify.app/)
-3. Roll a die
+1. [Visit this site](https://stunning-axolotl-ec43ae.netlify.app/)
+2. Roll a die
   - Enter any number in the text box and press the roll button
   - Or press a preset button to roll a standard die
 3. Scroll through the history to view past rolls
