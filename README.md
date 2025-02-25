@@ -1,18 +1,26 @@
-# Simple-Dice-Roller
+# Simple Dice Roller
 
-シンプルなダイスロールツールです。任意の数値を設定してダイスを振ったり、6面や100面などの定番のダイスを振ることができます。
+A simple dice rolling tool. You can roll dice with custom values or use standard dice like d6, d100, and more.
 
-## 機能
+## Features
 
-- 任意の面のダイスを振れる
-- 4面、6面、8面、12面、20面、100面のプリセットダイス
-- 履歴機能で過去の出目を表示
+- Roll dice with any number of sides
+- Preset dice: d4, d6, d8, d12, d20, d100
+- History function to display past rolls
 
-## ローカルで使う
+## How to Use
 
-1. このリポジトリをクローンまたはダウンロード
-2. index.htmlをブラウザで開く
+1. Visit this site
+2. Roll a die
+  - Enter any number in the text box and press the roll button
+  - Or press a preset button to roll a standard die
+3. Scroll through the history to view past rolls
 
-## ライセンス
+## Using Locally
 
-このプロジェクトはMITライセンスのもとで公開されています。詳細は[LICENSE](https://opensource.org/licenses/mit-license.php)をご覧ください。
+1. Clone or download this repository.
+2. Open index.html in a browser.
+
+## License
+
+This project is released under the MIT License. See [LICENSE](https://opensource.org/licenses/mit-license.php) for details.
