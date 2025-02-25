@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Simple Dice Rollerは、任意の面のダイスを振るためのツールです。シンプルで使いやすいツールをお楽しみください。">
+  <meta name="description" content="Simple Dice Roller is a tool for rolling dice with any number of sides. Enjoy this simple and easy-to-use tool.">
   <meta property="og:title" content="Simple Dice Roller">
-  <meta property="og:description" content="シンプルなダイスロールツール。任意の面のダイスを振ることができます。">
-  <meta property="og:url" content="https://your-netlify-url.com">
+  <meta property="og:description" content="A simple dice rolling tool. Roll any number of sides or use preset dice.">
+  <meta property="og:image" content="assets/og-image.png">
+  <meta property="og:url" content="https://stunning-axolotl-ec43ae.netlify.app/"> 
   <title>Simple Dice Roller</title>
   <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="style.css">
@@ -14,10 +15,11 @@
 
 <body>
   <h1>Simple Dice Roller</h1>
-  <p>最大値を入力してください</p>
-  <input type="number" id="maxNumber" placeholder="例：100" min="1">
-  <button onclick="generateRandom()">ダイスを振る</button>
+  <p>Enter the maximum number</p> 
+  <input type="number" id="maxNumber" placeholder="e.g., 100" min="1">
+  <button onclick="generateRandom()">Roll the Dice</button>
   <div id="result"></div>
+  
   <div class="preset-buttons">
     <button onclick="rollPreset(4)">D4</button>
     <button onclick="rollPreset(6)">D6</button>
@@ -29,14 +31,17 @@
   </div>
   
   <div id="history">
-    <h2>履歴</h2>
+    <h2>History</h2>
     <div id="historyList"></div>
   </div>
   
   <footer>
-  <p>&copy; 2025 kotatsugohan. This project is licensed under the MIT License.</p>
-  <p>詳しくはこちら：<a href="https://github.com/kotatsugohan/Simple-Dice-Roller" target="_blank" rel="noopener noreferrer">GitHub</a></p>
-</footer>
+    <p>&copy; 2025 kotatsugohan. This project is licensed under the MIT License.</p>
+    <p>For more information: 
+      <a href="https://github.com/kotatsugohan/Simple-Dice-Roller" target="_blank" rel="noopener noreferrer">GitHub</a>
+    </p>
+  </footer>
+
   <script src="main.js"></script>
 </body>
 </html>
