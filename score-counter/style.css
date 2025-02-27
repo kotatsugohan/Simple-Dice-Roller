@@ -1,0 +1,66 @@
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f8f9fa;
+    text-align: center;
+    padding: 5px 10px;
+    border-top: 1px solid #ddd;
+    font-size: 14px;
+}
+
+footer p {
+    margin: 0 auto;
+    max-width: 90%;
+    word-wrap: break-word;
+    white-space: normal;
+    line-height: 1.4;
+}
+
+footer a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.score-table {
+  width: calc(100vw - 100px);
+  overflow-x: auto;
+  margin: 0 auto;
+  white-space: nowrap;
+}
+
+table {
+  width: auto;
+  min-width: max-content;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+  min-width: 120px;
+}
+input[type="number"] {
+  width: 60px; /* 幅を少し広げる */
+  font-size: 16px; /* 文字サイズを大きく */
+  padding: 4px; /* 内側の余白 */
+  border: 1px solid #ddd; /* 枠線 */
+  text-align: center; /* 数字を中央に */
+}
+button {
+  padding: 8px 16px;
+  margin: 5px;
+  border: 1px solid #ddd;
+  background-color: #f8f9fa;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #ddd;
+}
