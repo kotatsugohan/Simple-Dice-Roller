@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Score Counter</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Simple Score Counter</h1>
+
+  <div class="controls">
+    <button id="add-player">プレイヤー追加</button>
+    <button id="add-turn">ターン追加</button>
+    <button id="reset">リセット</button>
+  </div>
+
+  <div class="score-table">
+    <table id="score-table">
+      <thead>
+        <tr>
+          <th>プレイヤー名</th>
+          <th>総合得点</th>
+          <!-- ターン列はJSで追加 -->
+        </tr>
+      </thead>
+      <tbody>
+        <!-- プレイヤー行はJSで追加 -->
+      </tbody>
+    </table>
+  </div>
+
+  <footer>
+    <p>© 2025 kotatsugohan. This project is licensed under the MIT License.</p>
+    <p>For more information: 
+      <a href="https://github.com/kotatsugohan/Simple-Dice-Roller" target="_blank" rel="noopener noreferrer">GitHub</a>
+    </p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
