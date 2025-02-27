@@ -1,6 +1,6 @@
-// プレイヤー追加
+// Add Player
 document.getElementById("add-player").addEventListener("click", function() {
-  let playerName = prompt("プレイヤー名を入力してください");
+  let playerName = prompt("Please enter the player name");
   if (playerName) {
     let tbody = document.querySelector("#score-table tbody");
     let newRow = document.createElement("tr");
@@ -12,13 +12,13 @@ document.getElementById("add-player").addEventListener("click", function() {
   }
 });
 
-// ターン追加
+// Add Turn
 let turnCount = 0;
 document.getElementById("add-turn").addEventListener("click", function() {
   turnCount++;
   let theadRow = document.querySelector("#score-table thead tr");
   let newTh = document.createElement("th");
-  newTh.textContent = `${turnCount}ターン目`;
+  newTh.textContent = `Turn ${turnCount}`;
   theadRow.appendChild(newTh);
 
   let rows = document.querySelectorAll("#score-table tbody tr");
@@ -30,7 +30,7 @@ document.getElementById("add-turn").addEventListener("click", function() {
   });
 });
 
-// スコア更新
+// Update Score
 function updateScore() {
   let row = this.closest("tr");
   let inputs = row.querySelectorAll("input[type='number']");
@@ -41,29 +41,29 @@ function updateScore() {
   row.querySelector(".total-score").textContent = total;
 }
 
-// リセット機能（プレイヤー残し＋確認付き）
+// Reset Function (Keep Players + Confirmation)
 document.getElementById("reset").addEventListener("click", function() {
-  // 確認ダイアログ
-  let confirmReset = confirm("本当にリセットしますか？ターンとスコアが消えます。");
+  // Confirmation dialog
+  let confirmReset = confirm("Are you sure you want to reset? Turns and scores will be cleared.");
   if (confirmReset) {
-    // theadからターン列を削除（プレイヤー名と総合得点以外）
+    // Remove turn columns from thead (everything except player name and total score)
     let theadRow = document.querySelector("#score-table thead tr");
     while (theadRow.children.length > 2) {
       theadRow.removeChild(theadRow.lastChild);
     }
 
-    // 各行のターン列を削除し、総合得点を0に
+    // Remove turn columns from each row and reset total score to 0
     let rows = document.querySelectorAll("#score-table tbody tr");
     rows.forEach(row => {
-      // プレイヤー名と総合得点以外を削除
+      // Remove everything except player name and total score
       while (row.children.length > 2) {
         row.removeChild(row.lastChild);
       }
-      // 総合得点を0にリセット
+      // Reset total score to 0
       row.querySelector(".total-score").textContent = "0";
     });
 
-    // ターン数を0に
+    // Reset turn count to 0
     turnCount = 0;
   }
 });
